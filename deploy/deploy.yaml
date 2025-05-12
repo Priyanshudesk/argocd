@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: demo-app-deployment
+  name: prince-app-deployment
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: demo-app
+      app: prince-app
   template:
     metadata:
       labels:
-        app: demo-app
+        app: prince-app
     spec:
       containers:
-      - name: demo-app
-        image: 1nfosecsingh/demo-app:v20250105121337
+      - name: prince
+        image: priyanshu1008/prince-app:latest
         ports:
         - containerPort: 5000
