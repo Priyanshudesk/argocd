@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Complete CI/CD DevOps Project 🚀
 ### Deploy Python Flask App on Kubernetes cluster with GitOps Approach. 
 
@@ -335,3 +336,7 @@ Output
 Application running on http://172.29.213.129:30008
 
 ![alt text](imgs/application.png)
+=======
+# argocd
+mission sucessfull
+>>>>>>> c067fd939c0c1b480edfa2689704a12c7c95f1f4
