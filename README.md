@@ -1,0 +1,2 @@
+# argocd
+mission sucessfull
