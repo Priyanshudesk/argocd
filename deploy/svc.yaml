@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: prince-app-service
+  name: demo-app-service
 spec:
   selector:
     app: prince-app
