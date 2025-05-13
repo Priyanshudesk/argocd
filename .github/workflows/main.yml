@@ -69,13 +69,18 @@ jobs:
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
         run: |
-         git config --global user.name "GitHub Actions Bot"
-         git config --global user.email "actions@github.com"
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
 
-         git add deploy/deploy.yaml
-         git commit -m "Update deploy.yaml with new image version - $VERSION" || echo "Nothing to commit"
+          git add deploy/deploy.yaml
+          git commit -m "Update deploy.yaml with new image version - $VERSION" || echo "No changes to commit"
 
-         git remote set-url origin https://x-access-token:${GH_PAT}@github.com/Priyanshudesk/argocd.git
+    
+          git remote set-url origin https://x-access-token:${GH_PAT}@github.com/Priyanshudesk/argocd.git
+
+          git config --get remote.origin.url
+
+    
           git push origin main
 
       
