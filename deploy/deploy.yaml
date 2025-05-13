@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: prince
-        image: priyanshu1008/prince-app:name:v20250513064315
+        image: priyanshu1008/prince-app:v20250513092843
         ports:
         - containerPort: 5000
